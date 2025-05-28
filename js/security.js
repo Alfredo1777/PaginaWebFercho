@@ -74,14 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         throw new Error('Error en el envío');
                     }
                 })
-                .catch(error => {
-                    alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
-                    console.error('Error:', error);
-                })
-                .finally(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Enviar mensaje';
-                });
+                
                 // Regenerar CAPTCHA después de enviar
                 generateCaptcha();
             } else {

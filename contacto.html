@@ -51,7 +51,9 @@
                 
                 <div class="form-group">
                     <label for="phone">Teléfono (opcional):</label>
-                    <input type="tel" id="phone" name="phone" maxlength="20" pattern="[\d\s+-]+" title="Solo números, espacios y los caracteres + -">
+                    <input type="tel" id="phone" name="phone" maxlength="10" pattern="\d{10}" 
+                        title="Ingrese un número de 10 dígitos sin espacios ni guiones">
+                    <small class="form-hint">Ejemplo: 3141974031 (10 dígitos)</small>
                 </div>
                 
                 <div class="form-group">
